@@ -1,0 +1,14 @@
+.header{
+    background: #084369;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home_text{
+    color: white;
+    font-size: 50px;
+    margin-top: 150px;
+    font-weight: 200;
+    letter-spacing: 5px;
+}
