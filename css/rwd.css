@@ -1,0 +1,21 @@
+@media only screen {
+    
+}
+@media only screen and (min-width: 40.063em) {
+/*
+          .contain-to-grid {
+    background: #3399cc;
+    height: 120px;
+    padding-top: 25px;
+}
+*/
+}
+@media only screen and (min-width: 64.063em) {
+/*
+   .contain-to-grid {
+    background: #3399cc;
+    height: 100px;
+   padding-top: 25px;
+}
+*/
+}
