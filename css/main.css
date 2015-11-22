@@ -1,26 +1,46 @@
-#header_section{
-    background: url(../images/siteBanner.jpg);
-    background-size: auto;
+.header{
+    background: #084369;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
-.fullWidth {
-   width: 100%;
-   margin-left: auto;
-   margin-right: auto;
-   max-width: initial;
-}
-.marketing-hero.home-large-hero {
-    background: url(../images/siteBanner.jpg) bottom center;
-    background-size: cover;
-    background-position: center;
-    padding-top: 180px;
-    padding-bottom: 250px;
-}
-*,p,h1,h2,h3,h4,h5,h6,section,a,li,ul{
-    font-family: 'Varela Round', sans-serif;
-}
-#text_ourmotto{
-  margin-top: 2em;
-}
-#img_ourmotto{
 
+.home_text{
+    color: white;
+    font-size: 50px;
+    margin-top: 150px;
+    font-weight: 200;
+    letter-spacing: 5px;
+}
+
+.prim_button{
+    width: 100%;
+   
+    margin: 20 0 10 0;
+    padding: 10 0 10 0;
+   display: flex;
+    color: white;
+    justify-content: center;
+    background: orange;
+}
+.prim_button:hover{
+     background: darkorange;
+}
+.p1{
+    font-size: 11pt;
+}
+.p2{
+    font-size: 14pt;
+}
+.p3{
+    font-size: 16pt;
+}
+.p4{
+    font-size: 18pt;
+}
+.p5{
+    font-size: 20pt;
+}
+.p6{
+    font-size: 22pt;
 }
