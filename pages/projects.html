@@ -12,6 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/app.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="../css/simple-sidebar.css" rel="stylesheet">
@@ -58,10 +59,83 @@
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
-                <h1>Projects</h1>
-                <p>This is just a site for my projects, ongoing and old ones.</p>
-               
-                <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Menu</a>
+              <div class="container">
+	<div class="row"><!--
+
+Photos from unsplash.com
+
+Follow me on
+Dribbble: https://dribbble.com/supahfunk
+Twitter: https://twitter.com/supahfunk
+Codepen: https://codepen.io/supah/
+
+-->
+<div class="gallery">
+  <figure>
+    <img src="https://images.unsplash.com/photo-1448814100339-234df1d4005d?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
+    <figcaption>Daytona Beach <small>United States</small></figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.unsplash.com/photo-1443890923422-7819ed4101c0?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
+    <figcaption>Териберка, gorod Severomorsk <small>Russia</small></figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.unsplash.com/photo-1445964047600-cdbdb873673d?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
+    <figcaption>
+      Bad Pyrmont <small>Deutschland</small>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.unsplash.com/photo-1439798060585-62ab242d7724?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
+    <figcaption>Yellowstone National Park <small>United States</small></figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.unsplash.com/photo-1440339738560-7ea831bf5244?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
+    <figcaption>Quiraing, Portree <small>United Kingdom</small></figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.unsplash.com/photo-1441906363162-903afd0d3d52?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
+    <figcaption>Highlands <small>United States</small></figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.unsplash.com/photo-1448814100339-234df1d4005d?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
+    <figcaption>Daytona Beach <small>United States</small></figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.unsplash.com/photo-1443890923422-7819ed4101c0?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
+    <figcaption>Териберка, gorod Severomorsk <small>Russia</small></figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.unsplash.com/photo-1445964047600-cdbdb873673d?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
+    <figcaption>
+      Bad Pyrmont <small>Deutschland</small>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.unsplash.com/photo-1439798060585-62ab242d7724?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
+    <figcaption>Yellowstone National Park <small>United States</small></figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.unsplash.com/photo-1440339738560-7ea831bf5244?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
+    <figcaption>Quiraing, Portree <small>United Kingdom</small></figcaption>
+  </figure>
+  <figure>
+    <img src="https://images.unsplash.com/photo-1441906363162-903afd0d3d52?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
+    <figcaption>Highlands <small>United States</small></figcaption>
+  </figure>
+</div>
+
+
+
+		
+	</div>
+</div>
+                
+                
+                
+                
+                
+                
             </div>
         </div>
         <!-- /#page-content-wrapper -->
@@ -70,6 +144,46 @@
     <!-- /#wrapper -->
 
     <!-- Bootstrap core JavaScript -->
+    
+    
+    <script>
+    popup = {
+  init: function(){
+    $('figure').click(function(){
+      popup.open($(this));
+    });
+    
+    $(document).on('click', '.popup img', function(){
+      return false;
+    }).on('click', '.popup', function(){
+      popup.close();
+    })
+  },
+  open: function($figure) {
+    $('.gallery').addClass('pop');
+    $popup = $('<div class="popup" />').appendTo($('body'));
+    $fig = $figure.clone().appendTo($('.popup'));
+    $bg = $('<div class="bg" />').appendTo($('.popup'));
+    $close = $('<div class="close"><svg><use xlink:href="#close"></use></svg></div>').appendTo($fig);
+    $shadow = $('<div class="shadow" />').appendTo($fig);
+    src = $('img', $fig).attr('src');
+    $shadow.css({backgroundImage: 'url(' + src + ')'});
+    $bg.css({backgroundImage: 'url(' + src + ')'});
+    setTimeout(function(){
+      $('.popup').addClass('pop');
+    }, 10);
+  },
+  close: function(){
+    $('.gallery, .popup').removeClass('pop');
+    setTimeout(function(){
+      $('.popup').remove()
+    }, 100);
+  }
+}
+
+popup.init()
+
+</script>
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
