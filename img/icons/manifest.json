@@ -1,9 +1,8 @@
 {
- "name": "Avinash Sharma",
-  "short_name": "Avinash",
-  "lang": "en-US",
-  "start_url": "/",
-  "display": "standalone",
+ "name": "AviotronPWA",
+ "short_name": "avioPWA",
+ "lang": "en-US",
+ "start_url": "/",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
@@ -40,6 +39,25 @@
    "sizes": "192x192",
    "type": "image\/png",
    "density": "4.0"
-  }
- ]
+  },
+      {  
+      "src": "\/android-icon-256x256.png", 
+      "sizes": "256x256",  
+      "type": "image/png"  
+    },  
+    {  
+      "src": "\/android-icon-384x384.png",  
+      "sizes": "384x384",  
+      "type": "image/png"  
+    },  
+    {  
+      "src": "\/android-icon-512x512.png",
+      "sizes": "512x512",  
+      "type": "image/png"  
+    }
+ ],
+    "background_color": "#FAFAFA",
+  "theme_color": "#DE123B", 
+  "display": "standalone",  
+  "orientation": "portrait"
 }
