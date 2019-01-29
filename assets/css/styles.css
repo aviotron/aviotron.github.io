@@ -5,9 +5,15 @@
          url('../fonts/manrope-regular.ttf') format('truetype');
   }
   
-  h1,h2,h3,h4,h5,h6,p,a,li,div{
+  h1,h2,h3,h4,h5,h6{
   font-family: 'MR',sans-serif;
+  font-weight: bold;
+  color: #333;
   }
+
+  p,a,li,div{
+    font-family: 'MR',sans-serif;
+    }
 
 
   .highlight-clean .buttons .btn-primary {
