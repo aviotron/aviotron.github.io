@@ -4,6 +4,8 @@
          url('../fonts/manrope-regular.woff') format('woff'),
          url('../fonts/manrope-regular.ttf') format('truetype');
   }
+
+  @import url('https://fonts.googleapis.com/css?family=Karla:400,700');
   
   h1,h2,h3,h4,h5,h6{
   font-family: 'MR',sans-serif;
@@ -12,7 +14,7 @@
   }
 
   p,a,li,div{
-    font-family: 'MR',sans-serif;
+    font-family: 'Karla',sans-serif;
     }
 
 
